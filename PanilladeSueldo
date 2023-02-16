@@ -1,0 +1,64 @@
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#include <string>
+
+using namespace std;
+
+int
+main ()
+{
+  int X, meses, anos;
+  float RCIVA, AFP, bonoantiguedad, totalganado, totaldescuento,
+    liquidopagable;
+  string nombrecompleto;
+
+  cout << "Ingrese el nombre completo" << endl;
+  getline (cin, nombrecompleto);
+  cout << "Ingrese cuanto es su sueldo mensual" << endl;
+  cin >> X;
+  cout << "Ingrese la cantidad de años trabajados" << endl;
+  cin >> anos;
+  AFP = X * 0.1271;
+  RCIVA = X * 0.13;
+  if (anos < 1)
+    {
+      bonoantiguedad = 0;
+    }
+  else
+    {
+      if (anos >= 2 && anos <= 4)
+	{
+	  bonoantiguedad = 6750 * 0.05;
+	}
+
+      else
+	{
+	  if (anos >= 5 && anos <= 7)
+	    {
+	      bonoantiguedad = 6750 * 0.11;
+	    }
+
+	  else
+	    {
+	      if (anos >= 8 && anos <= 10)
+		{
+		  bonoantiguedad = 6750 * 0.18;
+		}
+	    }
+	}
+    }
+    system("clear");
+  liquidopagable = (bonoantiguedad + X) - (RCIVA + AFP);
+  cout << "Planilla de sueldo de " << nombrecompleto << ":" << endl;
+  cout << "Su bono de antiguedad es: " << bonoantiguedad << endl;
+  cout << "Su AFP: " << AFP << endl;
+  cout << "Su RCIVA: " << RCIVA << endl;
+  cout << "Su total a cancelar es: " << liquidopagable << endl;
+
+
+
+
+
+  return 0;
+}
