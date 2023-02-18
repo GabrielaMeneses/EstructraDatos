@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cout<<"Ingrese el dividendo"<<endl;
+    cin>>a;
+    cout<<"Ingrese el divisor:"<<endl;
+    cin>>b;
+    if(a%b==0)
+    
+    {
+        cout<<"El numero "<<a<<" es divisile por "<<b;
+    }
+    else
+    {
+        cout<<"El numero "<<a<<" no es divisile por "<<b;
+    }
+    
+    return 0;
+}
