@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n,x;
+    i=0;
+    cout<<"Ingrese el numero del cual desea sumar todos sus antecesores"<<endl;
+    cin>>n;
+    while (i<=n)
+    {
+        x=x+i;
+        i++;
+    }
+    cout<<"La suma es:"<<x;
+    
+    return 0;
+}
