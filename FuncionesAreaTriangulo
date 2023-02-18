@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+float areatriangulo(float b, float h)
+{
+    float a;
+    a=(b*h)/2;
+    return a;
+}
+
+int main()
+{
+    float b, h, area;
+    
+    
+    cout<<"Ingrese la base del triangulo"<<endl;
+    cin>>b;
+    cout<<"Ingrese la altura del triangulo"<<endl;
+    cin>>h;
+    area=areatriangulo (b,h);
+    cout<<"El resultado es:"<<area;
+
+    
+    return 0;
+}
