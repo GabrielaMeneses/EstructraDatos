@@ -1,0 +1,98 @@
+#include <iostream>
+#include "stdlib.h"
+
+
+using namespace std;
+//prototipos
+
+void circulo();
+void aprobados();
+bool numerpares();
+
+//main
+int main()
+{
+    int opcion;
+    do
+    {
+        cout << "**MENU**" << endl;
+        cout << "===========" << endl;
+        cout << "1. Calcular el area de un circulo" << endl;
+        cout << "2. Calcular si el alumno aprobo la materia" << endl;
+        cout << "3.Determinar la suma de todos los pares de un numero" << endl;
+        cout << "Ingrese la opcion:";
+        cin >> opcion;
+        switch (opcion)
+        {
+        case 1:
+            circulo();
+            break;
+            
+        case 2:
+            aprobados();
+            break;
+        case 3:
+            if (numerpares())
+                cout << "el valor es primo";
+            else
+                cout << "El valor no es primo";
+            
+        case 0:
+            cout << "Salir";
+            break;
+        default:
+            cout << "opcion invalida";
+            break;
+        }
+        system("pause");
+        system("cls");
+    } while (opcion != 0);
+}
+//funciones
+void circulo()
+{
+    float r, area;
+    float pi = 3.141;
+    cout << "ingrese el radio";
+    cin >> r;
+    area = pi * r * r;
+    cout << "El area de el circulo es:";
+        cout<< area;
+}
+void aprobados()
+{
+    int p1, p2, prac, fin;
+    float par, pract, exfin, notfin;
+    cout << "Introdusca la nota del primer parcial" << endl;
+    cin >> p1;
+    cout << "Introdusca la nota del segundo parcial" << endl;
+    cin >> p2;
+    cout << "introdusca la nota practica" << endl;
+    cin >> prac;
+    cout << "introdusca la nota del examen final" << endl;
+    cin >> fin;
+    par = ((p1 + p2)/2)*0.4;
+    pract = prac * 0.2;
+    exfin = fin * 0, 4;
+    notfin = par + pract + exfin;
+    if (notfin <= 50)
+    {
+        cout << "El estudiante reprobo la materia" << endl;
+    }
+    else
+    {
+        cout << "El estudiante aprobo la materia" << endl;
+    }
+}
+bool numerpares()
+{
+    int par = 0, n, i;
+    cout << "ingrese el numero del que desea calcular la suma" << endl;
+    cin >> n;
+    for (i = 2; 1 <= n; i+=2)
+    {
+        par = par + i;
+    }
+    cout << "La suma es:" << par;
+    return par;
+}
