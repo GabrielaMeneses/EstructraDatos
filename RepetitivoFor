@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n; 
+    float i, x;
+    cout<<"Ingrese el numero del cual desea realizar esta serie: 1/2+1/3+1/4+...1/N"<<endl;
+    cin>>n;
+    for (i=1;i<=n;i++)
+    {
+        x=x+(1/i);
+    }
+    cout<<"el resultado de la serie es:"<<x;
+
+    return 0;
+}
