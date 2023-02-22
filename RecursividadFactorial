@@ -1,0 +1,37 @@
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+int factorial(int n);
+
+int main(int)
+{
+    system("color 0a");
+    int nro;
+    cout << "\n\t\t[     RECURSIVIDAD     ]\n";
+    cout << "\t\t————————\n\n";
+    cout << " EJERCICIO 2: Calcular el factorial de un numero " << endl << endl;
+    do
+    {
+        cout << " INGRESE NUMERO: ";
+        cin >> nro;
+        if (nro < 0) cout << "\nINGRESE UN NUMERO ENTERO Y POSITIVO… \n";
+    } while (nro < 0);
+    cout << endl;
+    cout << "\n Numero:" << nro << endl;
+    cout << "\n Factorial:"<<factorial(nro);
+    return 0;
+}
+int factorial(int n)
+{
+    if (n == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return n = n * factorial(n - 1);
+    }
+    
+}
