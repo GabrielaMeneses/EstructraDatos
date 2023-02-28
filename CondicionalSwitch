@@ -1,0 +1,68 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+
+int main()
+{
+    int optori;
+    float p1,p2,p3,p4;
+    cout<<"ingrese la el numero del torillo que desea: "<<endl;
+                    cin>>optori;
+                    switch(optori)
+                        {
+                            case 1002: cout<<"ingrese el peso del torrilo actual:";
+                            cin>>p1; 
+                            if(p1<=500)
+                            {
+                                cout<<"Maximo es Descarte"<<endl; break;
+                            }
+                            else
+                            {
+                                cout<<"Maximo es Rentable "<<endl; break;
+                            }
+                            
+                            
+                            case 1003: cout<<"ingrese el peso del torrilo actual:";
+                            cin>>p2; 
+                            if(p2<=500)
+                            {
+                                cout<<"Jupiter es Descarte"<<endl; break;
+                            }
+                            else
+                            {
+                                cout<<"Jupiter es Rentable "<<endl; break;
+                            }
+                            
+                            
+                            case 1004: cout<<"ingrese el peso del torrilo actual:";
+                            cin>>p3; 
+                            if(p3<=500)
+                            {
+                                cout<<"Pluton es Descarte"<<endl; break;
+                            }
+                            else
+                            {
+                                cout<<"Pluton es Rentable "<<endl; break;
+                            }
+                            
+                            
+                            case 1005: cout<<"ingrese el peso del torrilo actual:";
+                            cin>>p4; 
+                            if(p4<=500)
+                            {
+                                cout<<"Titan es Descarte"<<endl; break;
+                            }
+                            else
+                            {
+                                cout<<"Titan es Rentable "<<endl; break;
+                            }
+                           
+                            default: cout<<"no esta en el rango"<<endl; break;
+                        }
+
+
+    
+    return 0;
+}
