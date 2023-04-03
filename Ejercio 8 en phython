@@ -1,0 +1,2 @@
+monto=input("Introdusca el precio con decimales")
+print(monto[:monto.find('.')], "euros con" , monto[monto.find('.')+1:], "centavos")
