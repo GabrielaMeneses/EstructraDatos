@@ -1,0 +1,21 @@
+numeros=[1,2,3,4,5,6,7]
+lista=numeros*5
+print (numeros)
+print (numeros [3])#Imprime el numero de esa posicion 
+for i in numeros:#Imprime los numero uno por uno
+    print (i)
+for i in range(len(numeros)):#len => es la longutud de la lista
+    print (numeros[i])
+numeros.append(3) #Aumentar numeros list.append(item)
+print(numeros)
+numeros.insert(2,5) #Insertar un numero en una pocicion especifica lis.insert(idex,tem)
+print (numeros) 
+numeros.remove(5) #
+print (numeros)
+print (lista)
+numeros.extend(lista)
+print (numeros)
+x=lista.count(5)# Cuenta cuantas veces aparece un elemento en la lista list.count(element)
+print (x)
+lista.sort()
+print (lista)#Imprime la lista clasificada sin ese elemento
