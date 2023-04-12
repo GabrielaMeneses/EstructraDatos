@@ -1,0 +1,6 @@
+asignaturas = ['matematicas','fisica','lenguaje','ciencias']
+for i in range(len(asignaturas)):
+    print ("Yo estudio " + asignaturas[i])
+ 
+for i in asignaturas:
+     print("yo estudio "+ i)
