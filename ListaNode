@@ -1,0 +1,37 @@
+# include <iostream>
+using namespace std;
+class Node
+{
+public:
+	int data;
+	Node* next;
+
+};
+int main()
+{
+	int a[] = { 3, 5, 7,9, 11,15};
+	Node* head = new Node; //Creando el primer puntero que apuntara al primer Nodo
+	Node* temp;
+	Node* last;
+	head->data = a[0];
+	head->next = nullptr;
+	last = head;
+	for (int i = 1; i < sizeof(a) / sizeof(a[0]); i++)
+	{//Vamos a crear un nodo temporal
+		temp = new Node;
+		//Registrar al nodo temporal
+		temp->data = a[i];
+		temp->next = nullptr;
+		//Ligar el nodo temporal al nodo actual o al que corresponda
+		last->next = temp;
+		last = temp;
+		//Mostrar la lista enlazada Simple
+		Node* p = head;
+		while (p != nullptr)
+		{
+			cout << p->data << "->" << flush;
+			p = p->next;
+		}
+	}
+	return 0;
+}
