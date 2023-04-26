@@ -1,0 +1,6 @@
+﻿  EjemploPilasEstaticas.cpp
+C:\Users\UpsaLab\source\repos\EjemploPilasEstaticas\EjemploPilasEstaticas\EjemploPilasEstaticas.cpp(12,9): warning C4101: 'cod': variable local sin referencia
+  Pila.cpp
+  TipoDato.cpp
+  Generando código...
+  EjemploPilasEstaticas.vcxproj -> C:\Users\UpsaLab\source\repos\EjemploPilasEstaticas\x64\Debug\EjemploPilasEstaticas.exe
